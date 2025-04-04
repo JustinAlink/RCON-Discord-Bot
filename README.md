@@ -58,14 +58,14 @@ Ensure RCON is enabled and configured in your Minecraft server's `server.propert
 ```properties
 enable-rcon=true
 rcon.port=25575 # Or your custom RCON port
-rcon.password=YOUR_SECURE_RCON_PASSWORD
+rcon.password=YOUR_SECURE_RCON_PASSWORD # Choose a strong, unique password!
 # Ensure server-ip= is blank if running vanilla or in Docker/Pterodactyl
 ```
 Remember to configure firewalls or Pterodactyl allocations to allow connections to the RCON port.
 
 ### 2. Bot Installation
 
-1.  **Clone the repository:**
+1.  **Clone the repository:** (Replace `<repository-url>` with the actual URL)
     ```bash
     git clone <repository-url>
     cd <repository-directory>
@@ -114,15 +114,26 @@ npm start
     docker build -t discord-mc-bot .
     ```
 2.  **Run the container:**
-    ```bash
-    # Ensure you are in the project directory
-    docker run \
-        --detach \
-        --name discord-mc-bot-container \
-        --restart always \
-        --env-file .env \
-        discord-mc-bot
-    ```
+    *   **Linux/macOS (bash/zsh):**
+        ```bash
+        # Ensure you are in the project directory
+        docker run \
+            --detach \
+            --name discord-mc-bot-container \
+            --restart always \
+            --env-file .env \
+            discord-mc-bot
+        ```
+    *   **Windows (PowerShell):**
+        ```powershell
+        # Ensure you are in the project directory
+        docker run `
+            --detach `
+            --name discord-mc-bot-container `
+            --restart always `
+            --env-file .env `
+            discord-mc-bot
+        ```
 
 ## Project Structure
 
