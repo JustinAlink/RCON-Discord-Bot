@@ -1,0 +1,28 @@
+{
+  "name": "rcon-discord-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot using discord.js v14 and RCON to manage a Minecraft server.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "node deploy-commands.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "minecraft",
+    "rcon",
+    "discord.js"
+  ],
+  "author": "AlinkJustin",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "rcon-client": "^4.2.5"
+  },
+  "engines": {
+    "node": ">=16.9.0"
+  }
+}

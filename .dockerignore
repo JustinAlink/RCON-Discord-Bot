@@ -1,0 +1,18 @@
+# Ignore Git directory
+.git
+
+# Ignore environment files (we will mount this)
+.env
+
+# Ignore node_modules (dependencies will be installed in the image)
+node_modules
+
+# Ignore Docker files themselves
+Dockerfile
+.dockerignore
+
+# Ignore OS-specific files
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log* 
